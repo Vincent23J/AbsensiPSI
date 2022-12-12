@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".AbsenActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="admin "
+        android:drawableRight="@drawable/ic_baseline_logout_24"
+        android:textColor="@color/white"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_tanggal"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:text="test"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
