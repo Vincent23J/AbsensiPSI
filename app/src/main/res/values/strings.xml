@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">NewAbsensi</string>
+    <string-array name="list_Aksi">
+        <item>Hadir</item>
+        <item>Izin</item>
+        <item>Lembur</item>
+    </string-array>
 </resources>

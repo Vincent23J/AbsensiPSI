@@ -7,26 +7,77 @@
     android:background="@drawable/background2"
     tools:context=".AbsenActivity">
 
-    <TextView
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="admin "-->
+<!--        android:id="@+id/admin"-->
+<!--        android:drawableRight="@drawable/ic_baseline_logout_24"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textSize="20dp"-->
+<!--        android:textStyle="bold"-->
+<!--        />-->
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="admin "
         android:drawableRight="@drawable/ic_baseline_logout_24"
-        android:textColor="@color/white"
-        android:layout_marginLeft="320dp"
-        android:layout_marginTop="10dp"
-        android:textSize="20dp"
-        />
+        android:text="admin"
+        android:layout_alignParentRight="true"
+        android:background="#00FFFFFF"
+        android:id="@+id/btn_logout"/>
 
-    <TextView
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/tv_tanggal"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="40dp"-->
+<!--        android:text="test"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:textColor="@color/white"/>-->
+    <AnalogClock
+        android:layout_marginTop="100dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_tanggal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:id="@+id/analog"/>
+    <DigitalClock
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/analog"
+        android:id="@+id/digital"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:textSize="50dp"
         android:textStyle="bold"
-        android:textSize="40dp"
-        android:text="test"
-        android:gravity="center"
-        android:layout_marginTop="60dp"
         android:textColor="@color/white"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/digital"
+        android:id="@+id/spinneraksi"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:entries="@array/list_Aksi"
+        android:textColor="@color/white"
+        android:background="#43FFFFFF"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spinneraksi"
+        android:layout_marginTop="200dp"
+        android:background="@color/white"
+        android:shadowColor="@color/black"
+        android:text="OK"
+        android:id="@+id/btn_ok"/>
 
 </RelativeLayout>
