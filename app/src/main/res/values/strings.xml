@@ -5,4 +5,5 @@
         <item>Izin</item>
         <item>Lembur</item>
     </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>
