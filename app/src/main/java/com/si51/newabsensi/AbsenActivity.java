@@ -10,7 +10,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class AbsenActivity extends AppCompatActivity {
-    private Button btn_logout, btn_ok;
+    private Button btn_logout, btn_ok, btn_cek;
     private Spinner spAksi;
     private String Aksi;
 
@@ -21,6 +21,7 @@ public class AbsenActivity extends AppCompatActivity {
 
         btn_logout = findViewById(R.id.btn_logout);
         btn_ok = findViewById(R.id.btn_ok);
+        btn_cek = findViewById(R.id.cekhadir);
         Intent intent = new Intent(AbsenActivity.this, MainActivity.class);
         btn_logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,8 +42,19 @@ public class AbsenActivity extends AppCompatActivity {
                 } else if(Aksi.equals("Izin")){
                     Toast.makeText(AbsenActivity.this, "Izin Berhasil", Toast.LENGTH_SHORT).show();
                 } else if(Aksi.equals("Lembur")){
-                    Toast.makeText(AbsenActivity.this, "Permintaan Lembur Berhasil Dikirim", Toast.LENGTH_SHORT).show();
+                    Intent lembur = new Intent(AbsenActivity.this, LemburActivity.class);
+                    startActivity(lembur);
+
+                    //Toast.makeText(AbsenActivity.this, "Permintaan Lembur Berhasil Dikirim", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        btn_cek.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent kehadir = new Intent(AbsenActivity.this, KehadiranActivity.class);
+                startActivity(kehadir);
             }
         });
 

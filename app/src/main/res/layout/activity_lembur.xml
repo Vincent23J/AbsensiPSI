@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LemburActivity"
+    android:orientation="vertical"
+    android:layout_margin="6dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form Data Lembur"
+        android:textAlignment="center"
+        android:textSize="10pt"
+        android:layout_marginTop="5pt"
+        android:textStyle="bold"
+        android:id="@+id/tvform"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvform"
+        android:text="Nama Pelanggan"
+        android:layout_marginTop="15pt"
+        android:textSize="8pt"
+        android:layout_marginLeft="10pt"
+        android:id="@+id/tvnamapelanggan"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvnamapelanggan"
+        android:hint="Masukkan Nama Pelanggan"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:layout_marginTop="6dp"
+        android:id="@+id/etnama"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etnama"
+        android:text="Alamat"
+        android:layout_marginTop="15pt"
+        android:textSize="8pt"
+        android:layout_marginLeft="10pt"
+        android:id="@+id/tvalamat"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvalamat"
+        android:hint="Masukkan Alamat"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:layout_marginTop="6dp"
+        android:id="@+id/etalamat"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etalamat"
+        android:text="Pekerjaan Belum Selesai"
+        android:layout_marginTop="15pt"
+        android:textSize="8pt"
+        android:layout_marginLeft="10pt"
+        android:id="@+id/tvpekerjaan"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvpekerjaan"
+        android:hint="Masukkan Pekerjaan"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:layout_marginTop="6dp"
+        android:id="@+id/etpekerjaan"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etpekerjaan"
+        android:text="Waktu Tambahan"
+        android:layout_marginTop="15pt"
+        android:textSize="8pt"
+        android:layout_marginLeft="10pt"
+        android:id="@+id/tvwaktu"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvwaktu"
+        android:hint="Masukkan Tambahan Waktu"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:layout_marginTop="6dp"
+        android:id="@+id/etwaktu"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etwaktu"
+        android:layout_marginTop="20pt"
+        android:text="Kirim"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#D62424"
+        android:id="@+id/btn_kirim"/>
+
+</RelativeLayout>

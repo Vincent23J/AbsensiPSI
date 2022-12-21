@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawableRight="@drawable/ic_baseline_logout_24"
-        android:text="admin"
+        android:text="vincent"
         android:layout_alignParentRight="true"
         android:background="#00FFFFFF"
         android:id="@+id/btn_logout"/>
@@ -74,10 +74,21 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/spinneraksi"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="20dp"
         android:background="@color/white"
         android:shadowColor="@color/black"
         android:text="OK"
         android:id="@+id/btn_ok"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Cek Kehadiran"
+        android:id="@+id/cekhadir"
+        android:layout_alignParentRight="true"
+        android:background="#568BC34A"
+        android:layout_marginBottom="20pt"
+        android:layout_marginRight="13pt"/>
 
 </RelativeLayout>
